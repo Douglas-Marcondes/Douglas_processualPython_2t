@@ -1,0 +1,6 @@
+contador = 0
+
+print ("teste de soma")
+while contador <=100:
+    print (f"numero: {contador}")
+    contador +=5
