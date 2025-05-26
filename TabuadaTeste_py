@@ -1,0 +1,10 @@
+data = 27
+mes= 0
+print ("tabuada 27")
+while mes <= 100:
+    mult= mes * data
+    if mult >=1000:
+       print("maior que 1000")
+   
+    mes += 1
+    print (mult)
