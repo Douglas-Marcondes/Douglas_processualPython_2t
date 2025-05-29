@@ -1,0 +1,20 @@
+def validar_nome(nome):
+#esse comando vai identificar os caracteres especiais
+    return nome.isalpha()
+
+#essa parte vai ser criada a lista junto com o input, para poder digitar os 10 nomes, e se dar algum erro ele vai interromper o codigo, na real ela vai validar
+nomes = []
+for i in range(10):
+    nome = input(f"Digite o {i+1}º nome: ")
+    if not validar_nome(nome):
+        print(f"Erro: '{nome}' contém caracteres inválidos. O programa será interrompido.")
+        exit()
+    nomes.append(nome)
+
+#esse comando vai organizar os nomes da lista em ordem alfabetica
+nomes.sort()
+
+# e esse vai mostrar quantos caracteres tem cada nome
+print("\nLista de nomes ordenada:")
+for nome in nomes:
+    print(f"{nome}: {len(nome)} letras")
